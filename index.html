@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Billi Inc Registration</title>
+</head>
+<body>
+    
+    <main>
+        <div class="left">
+            <img src="img/Logo.png" alt="">
+            <h1>Регистрация</h1>
+            <div class="invitation">
+                <p>Вас пригласил</p>
+                <p>Zaitev Andrei (zaiac2)</p>
+            </div>                       
+            <script src="https://www.google.com/recaptcha/api.js"></script>
+            <form action="#" id="billiReg" method="POST"></form>
+            <div class="formBilliReg">
+                <span>Телефон*</span>
+                <input form="billiReg" type="tel" name="tel" id="tel">
+                <span>E-mail*</span>
+                <input form="billiReg" type="email" name="email" id="email">
+                <span>Логин*</span>
+                <input form="billiReg" type="text" name="login" id="login">
+                <span>Пароль*</span>
+                <input form="billiReg" type="password" name="password" id="password">
+                <span>Подтверждение пароля*</span>
+                <input form="billiReg" type="password" name="password2" id="password2">
+                <span>Финансовый пароль*</span>
+                <input form="billiReg" type="password" name="financePassword" id="financePassword">
+                <span>Captcha*</span>
+                <div class="g-recaptcha" data-sitekey="6LfF70gcAAAAADlTm0h05wXYsE04uFht8Zp_yGTu" data-callback='onCAPTCHA' data-action='CAPTCHA'></div>
+                <button class="regBtn btn btn-white btn-animated" id="regBtn" type="submit">Регистрация</button>
+                <div class="userHaveAccount">
+                    <p class="iHaveAccount">Уже есть аккаунт?</p>
+                    <a href="#" class="entrance">Вход</a>
+                </div>
+            </div>
+        </div>
+        <div class="right"></div>
+    </main>    
+</body>
+</html>
